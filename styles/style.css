@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --font: 'Montserrat';
+    --black: #000;
+    --white: #fff;
+    --grey: #4c4c4c;
+    --pill: 1.5rem;
+    --line: 0.1rem;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0px;
+    background-image: url(/assets/achtergrond-koken2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        width: 100vw;
+    }
+
+
+    header li {
+        width: 25vw;
+    }
+
+
+    header nav {
+        width: 450vw;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    font-family: var(--font);
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: -2em;
+}
+
+header ul li {
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+nav li {
+    padding: 2vh 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    max-width: 10vw;
+}
+
+.hoofdmenu-inhoud {
+    margin: 0.2em;
+    padding: 0.4em 0.8em;
+    background: var(--black);
+    border: var(--line) solid var(--black);
+    border-radius: var(--pill);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0, 0.5);
+}
+
+.hoofdmenu-inhoud:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+
+h1 {
+    position: fixed;
+    font-family: var(--font);
+    top: 250px;
+    margin-left: 3.25em;
+    color: var(--black);
+    font-size: 3em;
+}

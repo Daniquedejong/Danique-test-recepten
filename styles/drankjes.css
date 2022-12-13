@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --font: 'Montserrat';
+    --black: #000;
+    --white: #fff;
+    --grey: #4c4c4c;
+    --pill: 1.5rem;
+    --line: 0.1rem;
+}
+
+/*....body....*/
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font);
+}
+
+
+body {
+    margin: 0px;
+    background-image: url(/assets/achtergrond-koken2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        width: 100vw;
+    }
+
+
+    header li {
+        width: 25vw;
+    }
+
+
+    header nav {
+        width: 450vw;
+    }
+}
+
+/*....header....*/
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    font-family: var(--font);
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: -2em;
+}
+
+header ul li {
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+nav li {
+    padding: 2vh 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    max-width: 10vw;
+}
+
+.hoofdmenu-inhoud {
+    margin: 0.2em;
+    padding: 0.4em 0.8em;
+    background: var(--black);
+    border: var(--line) solid var(--black);
+    border-radius: var(--pill);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0, 0.5);
+}
+
+.hoofdmenu-inhoud:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    margin-left: -57em;
+    margin-top: -0.75em;
+}
+
+/*....h1....*/
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font);
+    top: 200px;
+    color: var(--black);
+    font-size: 4em;
+    margin-top: 0em;
+}
+
+/*....grid....*/
+
+.recepten {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      " c b p "
+      " . . .  "
+    ;
+  
+    grid-column-gap: 0px;
+  }
+  
+  .carpaccio {
+    grid-area: c;
+  }
+
+  .bruchetta {
+    grid-area: b;
+  }
+
+  .caprese {
+    grid-area: p
+  }
+
+
+.carpaccio {
+    margin-top: 20em;
+    margin-left: 3em;
+    background-color: var(--black);
+    border-radius: var(--pill);
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--font);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0, 0.1);
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-top: 15em;
+}
+
+.carpaccio-foto {
+    position: absolute;
+    width: 350px;
+    margin-left: -7.25em;
+    margin-top: -13.5em;
+    border-radius: 0.5em;
+}
+
+.bruchetta {
+    margin-top: 20em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: var(--black);
+    border-radius: var(--pill);
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--font);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0, 0.1);
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-top: 15em;
+}
+
+.bruchetta-foto {
+    position: absolute;
+    width: 350px;
+    margin-left: -7.25em;
+    margin-top: -13.5em;
+    border-radius: 0.5em;
+}
+
+.caprese {
+    margin-top: 20em;
+    margin-right: 3em;
+    background-color: var(--black);
+    border-radius: var(--pill);
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--font);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0, 0.1);
+    padding-left: 6.5em;
+    padding-right: 6.5em;
+    padding-top: 15em;
+}
+
+.caprese-foto {
+    position: absolute;
+    width: 350px;
+    margin-left: -7.25em;
+    margin-top: -13.5em;
+    border-radius: 0.5em;
+}
